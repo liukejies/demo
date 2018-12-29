@@ -1,0 +1,11 @@
+document.writeln('<script type="text/javascript"><!--');
+document.writeln('google_ad_client = "pub-3645048061199849";');
+document.writeln('/* 驾考一点通-模拟-336x280, 创建于 11-3-31 */');
+document.writeln('google_ad_slot = "2468660514";');
+document.writeln('google_ad_width = 336;');
+document.writeln('google_ad_height = 280;');
+document.writeln('//-->');
+document.writeln('</script>');
+document.writeln('<script type="text/javascript"');
+document.writeln('src="https://pagead2.googlesyndication.com/pagead/show_ads.js">');
+document.writeln('</script>');

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>【驾校一点通官网】驾驶员模拟考试_科目一_科目四_驾照考试科目一_考驾照</title>
+    <meta name="keywords" content="科目四模拟考试2018新版,科目一模拟考试2018新版,科目一考试题库">
+    <meta name="description" content="更新：2018年新的驾校科目一、科目四考试题目及答案，认真完整做完一整套，轻松通过驾校科目一、科目四考试！">
+    <meta name="mobile-agent" content="format=xhtml; url=http://m.jxedt.com/mnks/">
+    <meta name="mobile-agent" content="format=html5; url=http://m.jxedt.com/mnks/">
+    <meta name="mobile-agent" content="format=wml; url=http://m.jxedt.com/mnks/">
+    <link href="simulation_files/main.css" type="text/css" rel="stylesheet">
+    <script src="simulation_files/hm.js"></script>
+    <script src="simulation_files/jquery-1.js"></script>
+    <link rel="preload" href="simulation_files/integrator.js" as="script">
+    <script type="text/javascript" src="simulation_files/integrator.js"></script>
+</head>
+<body>
+<div id="BAIDU_DUP_fp_wrapper"
+     style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;">
+    <iframe id="BAIDU_DUP_fp_iframe" src="simulation_files/o.html"
+            style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe>
+</div>
+<div style="border: 1px solid #dddddd;margin: 0px  auto;border-left: none;border-right: none;overflow: hidden;">
+    <img src="simulation_files/tops.jpg" style="width:100%">
+</div>
+<div class="top-bar main-full">
+    <div class="main">
+        <div class="pull-left">
+
+        </div>
+        <div class="pull-right">
+            <span><a href="http://user.jxedt.com/home/login">登录</a></span>
+            <span><a href="http://user.jxedt.com/register">注册</a></span>
+            <span><a href="http://www.jxedt.com/about/help.asp">帮助</a></span>
+        </div>
+    </div>
+</div>
+<div class="main top-header">
+    <div class="pull-left">
+        <a href="http://www.jxedt.com/"><img src="simulation_files/logo.png" alt="驾校一点通" width="228" height="52"></a>
+    </div>
+    <div class="pull-right">
+        <div class="top-search">
+            <select name="sort" id="sort">
+                <option value="jx" selected="selected">驾校</option>
+                <option value="jl">教练</option>
+                <option value="google">综合</option>
+            </select>
+
+            <div class="search-split"></div>
+            <input class="search-key" id="keyword"><input class="search-btn" type="submit" onclick="submitform()"
+                                                          value="搜索">
+        </div>
+
+        <script>
+            function submitform() {
+                var keyword = $("#keyword").val();
+                var sort = $("#sort").val();
+
+                if (keyword == "") {
+                    alert("请输入关键词");
+                    return;
+                }
+
+                if (sort == "jx") {
+                    location.href = "http://jiaxiao.jxedt.com/?keywords=" + keyword;
+                }
+
+                if (sort == "jl") {
+                    location.href = "http://jl.jxedt.com/?keywords=" + keyword;
+                }
+
+                if (sort == "pl") {
+                    location.href = "http://pl.jxedt.com/?keywords=" + keyword;
+                }
+
+                if (sort == "google") {
+                    location.href = "http://zhannei.baidu.com/cse/search?s=16040176402735648187&q=" + keyword;
+                }
+            }
+            $(function () {
+                document.onkeydown = function (e) {
+                    var ev = document.all ? window.event : e;
+                    if (ev.keyCode == 13) {
+                        submitform();
+                    }
+                }
+            });
+        </script>
+    </div>
+</div>
+<div class="top-menu main-full">
+    <div class="main">
+        <a href="homes.html">首页</a>
+        <a href="simulation.html" class="on">模拟考试</a>
+        <a href="" >错题练习</a>
+        <a href="http://jiaxiao.jxedt.com/" onclick="clickLog('from=JXEDT_Sy_tabjiaxiao')">找驾校</a>
+        <a href="http://jl.jxedt.com/" onclick="clickLog('from=JXEDT_Sy_tabjiaolian')">找教练</a>
+        <a href="http://tieba.jxedt.com/">试题讨论</a>
+        <a href="http://www.jxedt.com/wen/" onclick="clickLog('from=JXEDT_Sy_tabwenda')">学车问答</a>
+    </div>
+</div>
+<div class="main">
+    <div class="menu-left pull-left">
+        <div id="left_menus" class="menu-left-menus">
+            <a class="lm-xc no-active" href="http://mnks.jxedt.com/ckm1/" data-tempid="template_left_menu_xc"
+               onclick="clickLog('from=JXEDT_Sy_chexing')">小车试题</a>
+            <a class="lm-kc no-active" href="http://mnks.jxedt.com/akm1/" data-tempid="template_left_menu_kc"
+               onclick="clickLog('from=JXEDT_Sy_chexing')">客车试题</a>
+            <a class="lm-hc no-active" href="http://mnks.jxedt.com/bkm1/" data-tempid="template_left_menu_hc"
+               onclick="clickLog('from=JXEDT_Sy_chexing')">货车试题</a>
+        </div>
+        <div id="menu_container" class="menu-container"></div>
+    </div>
+    <div class="menu-center pull-left">
+        <a href="javascript:void(0)" id="btn_left"><em class="left"></em></a>
+        <a href="javascript:void(0)" id="btn_right"><em class="right"></em></a>
+
+        <div class="menu-screen" id="menu_screen">
+            <ul style="width: 1560px; left: -780px;">
+                <li><a href="http://www.jxedt.com/about/" target="_blank" onclick="clickLog('from=JXEDT_Sy_banner')">
+                    <img src="simulation_files/main_ad4.png" alt="" width="780" height="332"></a>
+                </li>
+                <li><a href="http://vip.jxedt.com/" target="_blank" onclick="clickLog('from=JXEDT_Sy_banner')">
+                    <img src="simulation_files/main_ad2.jpg" alt="" width="780" height="332"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-full exam-types" style="padding-top:0px">
+    <div class="main exam-type-list">
+        <div class="exam-type-item">
+                <div class="exam-type-logo xc"></div>
+                <h4 class="exam-type-title">小车 驾驶员考试</h4>
+            <dl class="exam-type-links">
+                <dt><a href="http://mnks.jxedt.com/ckm1/" onclick="clickLog('from=JXEDT_Sy_kslx')">科目一</a></dt>
+                <dd><a href="http://mnks.jxedt.com/ckm1/sxlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">顺序练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/ckm1/sjlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">随机练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/ckm1/wdct/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">错题练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/ckm1/mnks/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">模拟考试</a>
+                </dd>
+            </dl>
+            <dl class="exam-type-links">
+                <dt><a href="http://mnks.jxedt.com/ckm4/" onclick="clickLog('from=JXEDT_Sy_kslx')">科目四</a></dt>
+                <dd><a href="http://mnks.jxedt.com/ckm4/sxlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">顺序练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/ckm4/sjlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">随机练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/ckm4/wdct/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">错题练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/ckm4/mnks/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">模拟考试</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="exam-type-item">
+                <div class="exam-type-logo hc"></div>
+                <h4 class="exam-type-title">货车 驾驶员考试</h4>
+            <dl class="exam-type-links">
+                <dt><a href="http://mnks.jxedt.com/bkm1/" onclick="clickLog('from=JXEDT_Sy_kslx')">科目一</a></dt>
+                <dd><a href="http://mnks.jxedt.com/bkm1/sxlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">顺序练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/bkm1/sjlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">随机练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/bkm1/wdct/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">错题练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/bkm1/mnks/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">模拟考试</a>
+                </dd>
+            </dl>
+            <dl class="exam-type-links">
+                <dt><a href="http://mnks.jxedt.com/bkm4/" onclick="clickLog('from=JXEDT_Sy_kslx')">科目四</a></dt>
+                <dd><a href="http://mnks.jxedt.com/bkm4/sxlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">顺序练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/bkm4/sjlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">随机练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/bkm4/wdct/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">错题练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/bkm4/mnks/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">模拟考试</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="exam-type-item exam-type-item-no">
+                <div class="exam-type-logo kc"></div>
+                <h4 class="exam-type-title">客车 驾驶员考试</h4>
+            <dl class="exam-type-links">
+                <dt><a href="http://mnks.jxedt.com/akm1/" onclick="clickLog('from=JXEDT_Sy_kslx')">科目一</a></dt>
+                <dd><a href="http://mnks.jxedt.com/akm1/sxlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">顺序练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/akm1/sjlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">随机练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/akm1/wdct/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">错题练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/akm1/mnks/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">模拟考试</a>
+                </dd>
+            </dl>
+            <dl class="exam-type-links">
+                <dt><a href="http://mnks.jxedt.com/akm4/" onclick="clickLog('from=JXEDT_Sy_kslx')">科目四</a></dt>
+                <dd><a href="http://mnks.jxedt.com/akm4/sxlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">顺序练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/akm4/sjlx/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">随机练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/akm4/wdct/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">错题练习</a><span>|</span>
+                    <a href="http://mnks.jxedt.com/akm4/mnks/" target="_blank" onclick="clickLog('from=JXEDT_Sy_kslx')">模拟考试</a>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="footer main-full">
+    <div class="main">
+        <div class="pull-left footer-links">
+            <p>
+                <a href="http://www.jxedt.com/about/jianjie.asp" class="first" rel="nofollow" target="_blank">网站介绍</a>|
+                <a href="http://www.jxedt.com/about/sitemap.asp" target="_blank" rel="nofollow">网站地图</a>|
+                <a href="http://www.jxedt.com/about/link.asp" target="_blank" rel="nofollow">合作链接</a>|
+                <a href="http://www.jxedt.com/about/laws.asp" target="_blank" rel="nofollow">免责声明</a>|
+                <a href="http://www.jxedt.com/about/ad.asp" target="_blank" rel="nofollow">广告服务</a>|
+                <a href="http://www.jxedt.com/help.asp" target="_blank" rel="nofollow">用户帮助</a>|
+                <a href="http://www.jxedt.com/about/lianxi.asp" target="_blank" rel="nofollow">联系我们</a>|
+                <a href="http://www.jxedt.com/about/index.asp" target="_blank" rel="nofollow">意见反馈</a>
+
+
+            </p>
+
+            <p>
+                驾校一点通（<a href="http://www.jxedt.com/" target="_blank">www.jxedt.com</a>）旗下平台： <a
+                    href="http://jiaxiao.jxedt.com/" target="_blank">驾校平台</a>
+                <a href="http://jl.jxedt.com/" target="_blank">教练平台</a>
+                <a href="http://pl.jxedt.com/" target="_blank">陪练平台</a>
+                <a href="http://kaoshi.jxedt.com/" target="_blank">考试平台</a>
+            </p>
+
+            <p>
+                杭州联桥网络科技有限公司 浙ICP备09002072号
+            </p>
+        </div>
+        <div class="pull-right footer-ewm">
+            <div style="text-align: center; display:inline-block; margin-right:30px; color:#fff">
+                <img style="margin:0" src="simulation_files/app_code.png" width="86"><br>官方新题库
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="simulation_files/mnksindex.js"></script>
+<script type="text/html" id="template_left_menu_xc">
+    <dl>
+        <dt>小车科目一</dt>
+        <dd><a href="/test/test?subject=1&model=c1&testType=order" target="_blank">顺序练习</a><span>|</span>
+            <a href="/test/test?subject=1&model=c1&testType=rand" target="_blank">随机练习</a><span>|</span>
+            <a href="/test/questionQuery" target="_blank">错题练习</a><span>|</span>
+            <a href="/ckm1/mnks/" target="_blank">模拟考试</a></dd>
+    </dl>
+    <dl>
+        <dt>小车科目四</dt>
+        <dd><a href="/test/test?subject=4&model=c1&testType=order" target="_blank">顺序练习</a><span>|</span>
+            <a href="/test/test?subject=4&model=c1&testType=rand" target="_blank">随机练习</a><span>|</span>
+            <a href="/ckm4/wdct/" target="_blank">错题练习</a><span>|</span>
+            <a href="/ckm4/mnks/" target="_blank">模拟考试</a></dd>
+    </dl>
+</script>
+<script type="text/html" id="template_left_menu_kc">
+    <dl>
+        <dt>客车科目一</dt>
+        <dd><a href="/test/test?subject=1&model=a1&testType=order" target="_blank">顺序练习</a><span>|</span>
+            <a href="/test/test?subject=1&model=a1&testType=rand" target="_blank">随机练习</a><span>|</span>
+            <a href="/akm1/wdct/" target="_blank">错题练习</a><span>|</span>
+            <a href="/akm1/mnks/" target="_blank">模拟考试</a></dd>
+    </dl>
+    <dl>
+        <dt>客车科目四</dt>
+        <dd><a href="/test/test?subject=4&model=a1&testType=order" target="_blank">顺序练习</a><span>|</span>
+            <a href="/test/test?subject=4&model=a1&testType=rand" target="_blank">随机练习</a><span>|</span>
+            <a href="/akm4/wdct/" target="_blank">错题练习</a><span>|</span>
+            <a href="/akm4/mnks/" target="_blank">模拟考试</a></dd>
+    </dl>
+</script>
+<script type="text/html" id="template_left_menu_hc">
+    <dl>
+        <dt>货车科目一</dt>
+        <dd><a href="/test/test?subject=1&model=b1&testType=order" target="_blank">顺序练习</a><span>|</span>
+            <a href="/test/test?subject=1&model=b1&testType=rand" target="_blank">随机练习</a><span>|</span>
+            <a href="/bkm1/wdct/" target="_blank">错题练习</a><span>|</span>
+            <a href="/bkm1/mnks/" target="_blank">模拟考试</a></dd>
+    </dl>
+    <dl>
+        <dt>货车科目四</dt>
+        <dd><a href="/test/test?subject=4&model=b1&testType=order" target="_blank">顺序练习</a><span>|</span>
+            <a href="/test/test?subject=4&model=b1&testType=rand" target="_blank">随机练习</a><span>|</span>
+            <a href="/bkm4/wdct/" target="_blank">错题练习</a><span>|</span>
+            <a href="/bkm4/mnks/" target="_blank">模拟考试</a></dd>
+    </dl>
+</script>
+<script type="text/javascript">
+    $(function () {
+        scrollmover({
+            moverid: 'menu_screen',
+            leftbtnid: 'btn_left',
+            rightbtnid: 'btn_right',
+            waittime: 3000,
+            speed: 300
+        });
+        mnksleftmenu({
+            filter: $('#left_menus a'),
+            container: $('#menu_container'),
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    document.write('<script type="text/javascript" src="//track.58.com/adsys/jxedt_pcpagead?r=' + Math.random() + '"></scr' + 'ipt>');
+</script>
+<script type="text/javascript" src="simulation_files/jxedt_pcpagead.js"></script>
+<script src="simulation_files/adsbygoogle.js" type="text/javascript"></script>
+<script src="simulation_files/c.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?b54f0f8b3b75a8b7486c9adedf28f361";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>
+    var _trackURL = "{'cate':'','area':'','channel':'mnks','pagetype':'other'}";
+</script>
+<script src="simulation_files/referrer_jxedt_pc.js"></script>
+<script>
+    typeof(window.clickLog) === 'function' && window.clickLog('from=' + 'JXEDT_Sy_tabPV');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/jquery-1.11.1.js"></script>
+
+    <script>
+    </script>
+</head>
+<body>
+<table class="table table-striped">
+    <tr th:each="j : ${jsonsr}">
+        <td th:text="${j.id}"></td>
+        <td th:text="${j.question}"></td>
+        <!--<td th:text="${j.answer}"></td>-->
+        <td><input type="radio" name="item" value="item1"/>A：<span th:text="${j.item1}">1</span></td>
+        <td><input type="radio" name="item" value="item2"/>B：<span th:text="${j.item2}">2</span></td>
+        <td><input type="radio" name="item" value="item3"/>C：<span th:text="${j.item3}">3</span></td>
+        <td><input type="radio" name="item" value="item4"/>D：<span th:text="${j.item4}">4</span></td>
+        <!--<td th:text="${j.explains}"></td>-->
+        <td><img th:src="${j.url}" width="100" height="100"/></td>
+    </tr>
+</table>
+</body>
+</html>

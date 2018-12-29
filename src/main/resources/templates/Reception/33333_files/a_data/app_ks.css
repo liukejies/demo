@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.mainBox div.zjlist {height:430px;}
+.mainBox div.zjlist table {width:90%;margin:17px auto 0 auto;}
+.mainBox div.zjlist table tr td a {font-size:17px;font-family:"Microsoft YaHei";padding:4px 15px;}
+.mainBox div.zjlist table tr td a.h {color:#000000;font-size:17px;}
+.mainBox div.zjlist table tr td a.he {color:#555555;font-size:16px;}
+.mainBox div.zjlist table tr td a.he b {color:#000000;font-size:16px;;}
+.mainBox div.zjlist table tr td strong {font-size:16px;color:#555555;font-family:"Microsoft YaHei";}
+.mainBox div.zjlist table tr td hr {border:0;border-top:1px solid #ECECEC;border-bottom:1px solid #FFFFFF;height:1px;}
+.mainBox div.zjlist p b {font-size:15px;}
+.mainBox div.zjlist p strong {font-size:21px;font-weight:100;}
+.mainBox div.ctjlist table tr td a {font-size:17px;padding:4px 0px;}
+
+#link {padding-top:28px;}
+#link a {font-size:15px;font-family:"Microsoft YaHei";padding:0 15px;}
+
+#ExamArea {height:382px;}
+#ExamArea h3 {font-size:20px;line-height:26px;}
+#ExamArea h4 {font-size:18px;line-height:22px;}
+#ExamArea div ul {padding:15px 10px;width:97%;}
+#ExamArea div ul li {font-size:18px;line-height:26px;padding:9px 9px;padding-left:40px;}
+#ExamArea div ul.tp {width:50%;}
+#ExamArea div p.tp {width:46%;}
+#ExamArea div p img {max-width:95%;max-height:200px;}
+#ExamArea.kmyks {height:290px;}
+#ExamArea.kmsks {height:350px;}
+
+#ExamToolKs {padding:15px;}
+#ExamToolKs b {margin-top:7px;}
+#ExamToolKs p input {padding:6px 10px;margin:0 9px;cursor:pointer;font-family:"Microsoft YaHei";font-size:16px;}
+
+#ExamTool {padding:20px 15px;}
+#ExamTool input {padding:6px 10px;margin:0 15px;cursor:pointer;font-family:"Microsoft YaHei";font-size:16px;}
+
+#ExamInfo {padding:9px 0 19px 0;font-size:15px;font-family:"Microsoft YaHei";}
+#ExamInfo u {font-size:15px;margin:0 5px;}
+#ExamInfo input {font-size:15px;}
+
+#ExamOrderView			{padding:10px 0 1px 0;margin:5px 9px 5px 17px;	font-size:16px;font-family:"Segoe","Calibri","verdana","arial";color:#000000;}
+#ExamOrderView b {display:block;font-weight:100;margin:0;padding:0;}
+#ExamOrderView b.EOVWait,
+#ExamOrderView b.EOVHover,
+#ExamOrderView b.EOVVisited,
+#ExamOrderView b.EOVRight,
+#ExamOrderView b.EOVError,
+#ExamOrderView b.EOVNokey	{width:33px;height:30px;float:left;text-align:center;border:1px solid #9A9A9A;margin:-1px 0 0 -1px;padding:0;line-height:30px;}
+#ExamOrderView b.EOVWait		{background-color:#FEFEFE;cursor:pointer;color:#000000;}
+#ExamOrderView b.EOVHover		{background-color:#93F0E4;background-color:#2EB6A8;color:#FFFFFF;cursor:default;}
+#ExamOrderView b.EOVVisited {background-color:#C0F5EE;cursor:pointer;color:#000000;background-color:#D5FBF6;}
+#ExamOrderView b.EOVRight	{background-color:#008000;cursor:pointer;color:#FFFFFF;}
+#ExamOrderView b.EOVError	{background-color:#FF0000;cursor:pointer;color:#FFFFFF;}
+#ExamOrderView b.EOVNokey	{background-color:#EEEEEE;cursor:pointer;color:#666666;}
+
+#ExamOrderView			{margin:5px 5px 5px 10px;}
+
+#ExamResult dl dd input {padding:6px 10px;font-family:"Microsoft YaHei";font-size:16px;}
+
+
+#miniTip dl dt {font-size:15px;color:#000;font-family:"Microsoft YaHei";}
+#miniTip dl dd {padding:12px;}
+#miniTip dl dd div {font-size:14px;font-family:"Microsoft YaHei";line-height:200%;}
+#miniTip dl dd span input {font-size:14px;font-family:"Microsoft YaHei";}
